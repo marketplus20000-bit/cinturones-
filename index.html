@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Market Plus | Maquillaje</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        :root {
+            --principal: #f3e8ff;
+            --secundario: #fde2e4;
+            --acento: #7c3aed;
+            --texto: #333;
+            --boton: #4ade80;
+            --boton-hover: #22c55e;
+            --fondo: #fafafa;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background-color: var(--fondo);
+            color: var(--texto);
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(90deg, #c4b5fd, #fbcfe8);
+            padding: 25px 15px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 34px;
+            color: #1f2937;
+        }
+
+        header p {
+            margin-top: 6px;
+            font-size: 15px;
+            color: #374151;
+        }
+
+        /* NAV */
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            display: inline-block;
+            margin: 0 8px;
+            padding: 8px 16px;
+            background-color: white;
+            color: var(--acento);
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        nav a:hover {
+            background-color: var(--acento);
+            color: white;
+        }
+
+        /* CONTENEDOR */
+        .container {
+            max-width: 1100px;
+            margin: 35px auto;
+            padding: 0 15px;
+        }
+
+        .titulo-seccion {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: #6b21a8;
+        }
+
+        /* GRID */
+        .productos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 22px;
+        }
+
+        .producto {
+            background-color: white;
+            border-radius: 14px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.07);
+            transition: transform 0.2s;
+        }
+
+        .producto:hover {
+            transform: translateY(-6px);
+        }
+
+        .producto h3 {
+            font-size: 17px;
+            margin-bottom: 10px;
+        }
+
+        .precio {
+            font-size: 18px;
+            font-weight: bold;
+            color: #16a34a;
+            margin-bottom: 15px;
+        }
+
+        .btn-comprar {
+            display: inline-block;
+            background-color: var(--boton);
+            color: #064e3b;
+            padding: 10px 18px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+        .btn-comprar:hover {
+            background-color: var(--boton-hover);
+            color: white;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #6b7280;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Market Plus</h1>
+    <p>Maquillaje accesible para todos los estilos</p>
+
+    <nav>
+        <a href="https://marketplus20000-bit.github.io/tienda-de-productos-oline/">Inicio</a>
+        <a href="#">Contacto</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2 class="titulo-seccion">Maquillaje</h2>
+
+    <div class="productos">
+
+        <div class="producto">
+            <h3>Labial Mate</h3>
+            <div class="precio">$120 MXN</div>
+            <a href="#" class="btn-comprar">Comprar</a>
+        </div>
+
+        <div class="producto">
+            <h3>Paleta de Sombras</h3>
+            <div class="precio">$250 MXN</div>
+            <a href="#" class="btn-comprar">Comprar</a>
+        </div>
+
+        <div class="producto">
+            <h3>Base Líquida</h3>
+            <div class="precio">$180 MXN</div>
+            <a href="#" class="btn-comprar">Comprar</a>
+        </div>
+
+        <div class="producto">
+            <h3>Brochas de Maquillaje</h3>
+            <div class="precio">$220 MXN</div>
+            <a href="#" class="btn-comprar">Comprar</a>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    © 2025 Market Plus · Compras seguras y fáciles
+</footer>
+
+</body>
+</html>
